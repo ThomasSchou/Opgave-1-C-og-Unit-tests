@@ -4,14 +4,14 @@ namespace Class_Library_og_Unit_Test
 {
     public class FootBallPlayer
     {
-        private int _id = 0;
+        private static int _id = 1;
         private string _name;
         private double _price;
         private int _shirtNumber;
 
         public FootBallPlayer(string name, double price, int shirtNumber)
         {
-            ID = ID++;
+            ID = _id++;
             Name = name;
             Price = price;
             ShirtNumber = shirtNumber;
